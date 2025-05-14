@@ -262,8 +262,13 @@ nav a:hover,nav a.active{
         justify-content: center;
     }
 
+    .sub p{
+        flex-wrap: wrap;
+    }
+
     .sub img{
         width: 25rem;
+        background-size: contain;      
     }
 
     #top_ft {
