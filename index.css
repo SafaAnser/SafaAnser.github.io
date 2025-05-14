@@ -24,7 +24,7 @@ header{
 }
 
 nav ul li{
-    min-width:5rem;
+    min-width:4rem;
     text-align: center;
 }
   
@@ -210,11 +210,11 @@ button:hover{
     }
     
    .bg iframe{
-    height: 20rem;
+    height: 30rem;
     }
 
     main{
-    min-height:48vh;
+    min-height:50vh;
     }
 
     #top_ft {
