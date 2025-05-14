@@ -262,6 +262,10 @@ nav a:hover,nav a.active{
         justify-content: center;
     }
 
+    .sub img{
+        width: 25rem;
+    }
+
     #top_ft {
     flex-direction: column;
     padding: 2rem 1rem;
