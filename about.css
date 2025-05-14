@@ -152,7 +152,7 @@ h2{
     font-weight: bolder;
     font-size: large;
     text-decoration: none;
-}
+} 
 
 
 @media screen and (max-width: 900px){
@@ -190,7 +190,7 @@ h2{
 }
 
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 600px){
     
     h1{
         font-size: 1rem;
