@@ -1,4 +1,8 @@
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 body{
     background-color: rgb(244, 244, 249);
@@ -16,7 +20,6 @@ header{
     align-items: center;
     background-color: rgb(255, 255, 255);
     background-size: 15rem;
-    margin-left: 0.1rem;
     min-height: 2rem;
     padding: 1rem 2rem;
 
@@ -26,7 +29,7 @@ header{
 }
 
 nav ul li{
-    min-width: 80px;
+    min-width:4.3rem;
     text-align: center;
 }
   
@@ -188,6 +191,8 @@ button:hover{
 }
 
 @media screen and (max-width: 600px) {
+
+
 
     nav{
         padding:1rem 3rem;
