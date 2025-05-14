@@ -103,7 +103,7 @@ button:hover{
 }
   
 .bg iframe{
-    width: 100%;
+    width: 100vw;
     height: 100%;
     border: none;
     object-fit: cover;
@@ -219,7 +219,7 @@ button:hover{
 
     #top_ft {
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 0rem 1rem;
     gap: 2rem;
     }
 
