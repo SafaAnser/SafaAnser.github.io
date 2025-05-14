@@ -132,7 +132,7 @@ h1{
 }
 
 
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1400px){
 
     header{
         flex-direction: column;
