@@ -32,7 +32,6 @@ header{
     align-items: center;
     background-color: rgb(255, 255, 255);
     background-size: 15rem;
-    margin-left: 0.1rem;
     min-height: 2rem;
     padding: 1rem 2rem;
 
@@ -42,7 +41,7 @@ header{
 }
 
 nav ul li{
-    min-width: 80px;
+    min-width: 4rem;
     text-align: center;
 }
 nav ul{
@@ -261,6 +260,12 @@ nav a:hover,nav a.active{
         align-items: center;
         text-align: center;
         justify-content: center;
+    }
+
+    #top_ft {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
     }
 
 
