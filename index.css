@@ -203,7 +203,13 @@ button:hover{
     button{
         font-size: 0.8rem;
         padding: 0.4rem 1rem; 
+    
     }
+    #top_ft {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
 
 }
   
