@@ -257,6 +257,12 @@ nav a:hover,nav a.active{
         padding: 2rem;
     }
 
+    .col{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
 
 
   
