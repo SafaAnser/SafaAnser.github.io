@@ -4,6 +4,7 @@ body{
     font-size: 1rem;
     padding: 0;
     margin: 0; 
+
 }
 
 .h{
@@ -73,15 +74,17 @@ nav a:hover,nav a.active{
     display: flex;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 #ov img{
-    width: 40rem;
+    width: 45rem;
     height: auto;
 }
 
 #ov_txt{
     padding: 2rem;
+    
 }
 
 .pg h1{
@@ -93,6 +96,7 @@ nav a:hover,nav a.active{
 
 .main{
     display: flex;
+    overflow: hidden;
 }
 
 .main img{
@@ -183,7 +187,8 @@ nav a:hover,nav a.active{
 }
 
 
-@media screen and (max-width: 1400px){
+
+@media screen and (max-width: 900px){
 
     header{
         flex-direction: column;
@@ -208,15 +213,24 @@ nav a:hover,nav a.active{
 
     #ov{
         display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
     }
     #ov img{
-        width: 22rem;
+        width: 25rem;
         height: 15rem;
         margin-left: 1rem;
     }
 
     .pg h1{
-        font-size: 1.8rem;
+        font-size: 2.5rem;
+        padding: 5rem 0;
+    }
+
+    .main p , .main h2{
+        padding: 5rem 0 ;
     }
 
     .main{
@@ -233,20 +247,16 @@ nav a:hover,nav a.active{
         margin: 0;
     }
 
+
   
 }
  
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 600px){
+    .pg{
+        padding: 2rem;
+    }
 
-    #ov{
-        display:flex;
-        flex-direction: column;
-    }
-    #ov img{
-        width: 28rem;
-        height: 18rem;
-    }
 
 
   
