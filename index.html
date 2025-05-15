@@ -2,48 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--makes the page responsive on different devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+
+  <!--title that appears in the browser tab -->
   <title>My Ride Uncovered</title>
+
+  <!--links an external CSS file for styling -->
   <link rel="stylesheet" href="index.css">
+
+  <!--imports a custom font from Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
+     <!--header section: contains the logo and navigation menu -->
     <header> 
+
+         <!--logo image with specific width and height -->
         <img class="logo_img" src="image/logo.png" alt="logo of Lexus"
         width="250rem"
-        height="45rem">
+        height="45rem"> <!--adds width and height of the img-->
+
+         <!--navigation menu with links to different pages -->
         <nav>
+            
+            <!--unordered list for navigation menu -->
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a  href="about.html">About</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+
+                <!--'li' defines a list item; 'a' is a clickable link; 'active' highlights the current page -->
+                <li><a href="index.html" class="active">Home</a></li> 
+                <li><a  href="about.html">About</a></li> <!--link to the About page -->
+                <li><a href="features.html">Features</a></li><!--link to the Features page -->
+                <li><a href="gallery.html">Gallery</a></li><!--link to the Gallery page -->
+                <li><a href="contact.html">Contact</a></li><!--link to the Contact page -->
             </ul>
+
+        <!--end of navigation menu-->    
         </nav>
+
+    <!--end of header-->    
     </header>
+    
+    <!--main content area of the page -->
     <main>
+
+        <!--section for embedding a 3D model using Sketchfab -->
         <section class="bg">
+
+             <!--embedded 3D interactive model of the Lexus IS F-Sport 2021 -->
             <iframe title="Lexus IS F-Sport 2021" frameborder="0" allowfullscreen mozallowfullscreen="true" 
             webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share 
             src="https://sketchfab.com/models/67615b93cb4f4ba8bfb957328b62d415/embed?autostart=1&autospin=0.1&ui_controls=0&ui_infos=0&ui_stop=0"></iframe> 
-        </section>
         
+        </section>
+
+        <!--introduction section with a heading, text, and button -->
         <section class="mid">
+
+            <!--heading text-->
             <h2>Welcome to My Car's World</h2>
+
+            <!--paragraph description-->
             <p>Explore the unique features, style, and story behind my favorite ride.</p>
+
+            <!--button that links to the Features page, opens in a new tab -->
             <a target="_blank" href="features.html"><button>See the Features</button></a>
+
         </section>
 
     </main>
     
+    <!--footer section with extra navigation and contact links -->
     <footer>
-    
+        
+        <!--top part of footer with 3 columns-->
         <div id="top_ft">
 
+            <!--first column: quick links-->
             <div>
                 <h3>Quick Links</h3>
+                <!--list of internal navigation links-->
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -53,8 +92,10 @@
                 </ul>
             </div>
 
+             <!--second column: support links-->
             <div>
                 <h3>Support</h3>
+                <!--list of support-related links-->
                 <ul>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">Privacy Policy</a></li>
@@ -62,8 +103,10 @@
                 </ul>
             </div>
 
+            <!--third column: social media links-->
             <div>
                 <h3>Follow Us</h3>
+                <!--list of external social links opening in new tab-->
                 <ul>
                     <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
                     <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
@@ -73,11 +116,12 @@
 
         </div>
 
-
+        <!--footer bottom area with copyright -->
         <div id="dwn_ft">
             <p> &copy; 2025 My Ride Uncovered. Built with passion.</p>
         </div>
-        
+    
+    <!--end of footer-->
     </footer>
 
 
