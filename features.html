@@ -2,112 +2,205 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!--makes the page responsive on all devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--sets the title of the webpage that appears in the browser tab-->
     <title>Features</title>
+    
+    <!--links the external css file for styling-->
     <link rel="stylesheet" href="features.css">
+
+    <!--imports the orbitron font from google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 </head>
+
+<!--opens the body of the document where visible content goes-->
 <body>
+
+    <!--starts the header section which usually contains logo and navigation-->
     <header> 
+
+        <!--display logo image with alt text and size-->
         <img class="logo_img" src="image/logo.png" alt="logo of Lexus"
         width="250rem"
         height="45rem">
+
+        <!--starts the navigation bar-->
         <nav>
+
+            <!--starts an unordered list for navigation items-->
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="features.html"class="active">Features</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
+            
+            <!--closes the unordered list-->
             </ul>
+        
+        <!--closes the navigation bar-->
         </nav>
+
+    <!--closes the header section-->
     </header>
 
+    <!--starts the main content of the page-->
     <main>
         
+        <!--adds a named anchor at the top for scroll-to-top links-->
         <a id="top"></a>
+
+        <!--creates a button that scrolls back to the top-->
         <a href="#top" class="to-top">↑</a>
 
+        <!--starts a section with background styling class-->
         <section class="sec_bg">
 
+            <!--container for the overview section-->
             <div id="ov">
+
+                <!--adds overview image of the car-->
                 <img src="image/overview image.jpg" alt="Side profile of Lexus for overview">
+                
+                <!--container for overview text-->
                 <div id="ov_txt">
+
+                    <!--heading for the overview section-->
                     <h1 class="h">OVERVIEW</h1>
+
+                    <!--paragraph describing the car's overview-->
                     <p class="p">The 2021 Lexus IS 350 F-Sport combines luxury and performance with a 311-hp V6 engine, dynamic handling, sport-tuned suspension, premium materials, cutting-edge technology, and top-tier safety features</p>
             
+                <!--closes the overview text container-->
                 </div>
+
+            <!--closes the overview text container-->    
             </div>
 
+        <!--closes the section-->
         </section>
 
+        <!--starts the performance section with background styling-->
         <section class="sec_bg">
+
+            <!--container for page content-->
             <div class="pg">
+
+                <!--heading for performance section-->
                 <h1 class="h">PERFORMANCE</h1>
 
+                <!--main container for image and description-->
                 <div class="main">
 
+                    <!--adds engine image of the car and sets width and height-->
                     <img src="image/engine.avif" alt="Engine of Lexus IS 350 F-Sport"
                     width="900rem"
-                    height="500rem">
+                    height="500rem"> 
 
-                    <div>                   
+                    <!--container for engine description-->   
+                    <div>        
+                        <!--sub-heading for engine section-->           
                         <h2 class="h2">Engine and Acceleration</h2>
+
+                        <!--description of engine performance-->
                         <p class="p">The Lexus IS 350 F-Sport’s 3.5L V6 makes 311 hp and hits 0–60 mph in 5.6 seconds, delivering smooth and responsive power.</p>
+                    
+                        <!--closes engine description container-->
                     </div>
- 
+
+                <!--closes main image-description container-->
                 </div>
                 
+                <!--column layout for more performance features-->
                 <div class="col">
                     
+                    <!--individual feature box-->
                     <div class="sub">
+
+                        <!--adds drivetrain image of the car and sets width and height-->
                         <img src="image/drivetrain.jpg" alt="Drivetrain of Lexus IS 350 F-Sport"
                         width="450rem"
-                        height="300rem">
-                     
+                        height="300rem"> 
+
+                        <!--sub-heading for drivetrain-->
                         <h2 class="h2">Transmission and Drivetrain</h2>
+                        <!--description of drivetrain-->
                         <p class="p">The RWD model uses an 8-speed automatic, while the AWD version has a 6-speed. Both deliver smooth, responsive shifts for strong performance and daily comfort.</p>
-                            
+                        
+                    <!--closes drivetrain container-->
                     </div>
 
-
+                     <!--individual feature box-->
                     <div class="sub"> 
+
+                        <!--adds suspension image of the car and sets width and height-->
                         <img src="image/suspension.webp" alt="Suspension of Lexus Is 350 F-Sport"
                         width="450rem"
                         height="300rem"> 
                         
+                         <!--sub-heading for suspension-->
                         <h2 class="h2">Suspension and Handling</h2>
+
+                         <!--description of suspension system-->
                         <p class="p">The F-Sport trim features Adaptive Variable Suspension that adjusts to road and driver input, paired with a stiff chassis for sharp cornering, minimal body roll, and a smooth, controlled ride.</p>
-                          
+                    
+                    <!--closes suspension container-->
                     </div>
                     
-
+                    <!--individual feature box-->
                     <div class="sub">
+
+                        <!--adds brake image of the car and sets width and height-->
                         <img src="image/brakes.jpg" alt="Brakes of Lexus IS 350 F-Sport"
                         width="450rem"
                         height="300rem">
                         
                     
+                        <!--sub-heading for brakes-->
                         <h2 class="h2">Brakes</h2>
+
+                        <!--description of brakes-->
                         <p class="p">Large ventilated disc brakes (13.1" front, 11.7" rear) provide strong stopping power and solid pedal feel, enhancing confident driving dynamics.</p>
-                      
+                    
+                    <!--closes brakes container-->
                     </div>
 
 
-                    <div class="sub"> 
+                    <div class="sub"> <!--individual feature box-->
+
+                        <!--adds aerodynamic image of the car and sets width and height-->
                         <img src="image/aerodynamic.png" alt="Aerodynamic of Lexus Is 350 F-Sport"
                         width="450rem"
                         height="300rem"> 
                 
+                        <!--sub-heading for aerodynamics-->
                         <h2 class="h2">Aerodynamic</h2>
-                        <p class="p">The IS 350 F-Sport’s sharp lines and low stance improve airflow for better stability. Its front bumper and underbody panels reduce drag, boosting efficiency and handling.</p>
-                    
-                    </div>
-                </div>
-            </div>
 
+                        <!--description of aerodynamic design-->
+                        <p class="p">The IS 350 F-Sport’s sharp lines and low stance improve airflow for better stability. Its front bumper and underbody panels reduce drag, boosting efficiency and handling.</p>
+                   
+                     <!--closes aerodynamic container-->
+                    </div>
+                
+                <!--closes column layout-->
+                </div>
+
+             <!--closes page content container-->   
+            </div>
+        
+        <!--closes the performance section-->
         </section>
 
+
+
+        <!--REST OF THE HTML CONTINUES IN THE SAME FORMAT-->
+
+
+
+        <!--starts a section with background styling class-->
         <section class="sec_bg">
             <div class="pg">
                 <h1 class="h">SAFETY</h1>
@@ -159,8 +252,11 @@
                 
                 </div>
             </div>
+
+         <!--closes the safety section-->
         </section>
 
+        <!--starts a section with background styling class-->
         <section class="sec_bg">
             <div class="pg">
                 <h1 class="h">DESIGN AND INTERIOR</h1>
@@ -189,7 +285,11 @@
                 
                 </div>
             </div>
+
+         <!--closes the design and interior section-->
         </section>
+
+        <!--starts a section with background styling class-->
         <section class="sec_bg">
             <div class="pg">
                 <h1 class="h">TECHNOLOGY</h1>
@@ -218,16 +318,26 @@
                 
                 </div>
             </div>
+
+        <!--closes the technology section-->
         </section>
 
+    <!--closes the main content area-->
     </main>
 
+    <!--starts the footer section-->
     <footer>
 
+        <!--top part of the footer-->
         <div id="top_ft">
 
+            <!--first column for quick links-->
             <div>
+                
+                <!--heading for quick links-->
                 <h3>Quick Links</h3>
+
+                <!--unordered list for links-->
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -235,33 +345,51 @@
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+
+            <!--closes first column-->
             </div>
 
+            <!--second column for support links-->
             <div>
+
+                <!--heading for support-->
                 <h3>Support</h3>
+
+                <!--unordered list for support items-->
                 <ul>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms of Service</a></li>
                 </ul>
+
+            <!--closes second column-->
             </div>
 
+             <!--third column for social media links-->
             <div>
+                <!--heading for social media-->
                 <h3>Follow Us</h3>
+
+                <!--unordered list for social links-->
                 <ul>
                     <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
                     <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
                     <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
                 </ul>
+            <!--closes third column-->
             </div>
 
+        <!--closes top part of footer-->
         </div>
 
 
+        <!--bottom part of the footer-->
         <div id="dwn_ft">
             <p> &copy; 2025 My Ride Uncovered. Built with passion.</p>
+        <!--closes bottom part of footer-->
         </div>
-        
+    
+    <!--closes footer section-->
     </footer>
 
 </body>
