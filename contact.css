@@ -1,210 +1,235 @@
+/*<!--sets global styles for the entire webpage-->*/
 body{
-    font-size: 1.2rem;
-    font-family: sans-serif;
-    font-size: 1rem;
-    background: rgb(212, 212, 212);
-    padding: 0;
-    margin: 0;
-    
+    font-size: 1.2rem; /*<!--sets base font size-->*/
+    font-family: sans-serif; /*<!--sets default font family-->*/
+    font-size: 1rem; /*<!--overrides font size again-->*/
+    background: rgb(212, 212, 212); /*<!--sets a background-->*/
+    padding: 0; /*<!--removes default body padding-->*/
+    margin: 0; /*<!--removes default body margin-->*/
 }
 
+/*<!--styles the top navigation header-->*/
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    background-size: 15rem;
-    min-height: 2rem;
-    padding: 1rem 2rem;
-
+    display: flex; /*<!--uses flex layout for horizontal alignment-->*/
+    justify-content: space-between; /*<!--spaces children apart evenly-->*/
+    align-items: center; /*<!--vertically centers items-->*/
+    background-color: rgb(255, 255, 255); /*<!--sets background-->*/
+    background-size: 15rem; /*<!--sets background image size if used-->*/
+    min-height: 2rem; /*<!--sets minimum height-->*/
+    padding: 1rem 2rem; /*<!--adds padding to all sides-->*/
 }
+
+/*<!--adjusts position of the logo image in the header-->*/
 .logo_img{
-    margin: -1.5rem;
+    margin: -1.5rem; /*<!--moves logo up and left-->*/
 }
 
+/*<!--styles individual list items in nav bar-->*/
 nav ul li{
-    min-width: 4rem;
-    text-align: center;
+    min-width: 4rem; /*<!--sets minimum width for spacing-->*/
+    text-align: center; /*<!--centers text inside each list item-->*/
 }
-  
+
+/*<!--styles the nav list container-->*/
 nav ul{
-    list-style: none;
-    display: flex;
-    gap: 1.5rem; 
-    padding: 0;
-    margin: 0;
-
+    list-style: none; /*<!--removes bullet points-->*/
+    display: flex; /*<!--displays items in a row-->*/
+    gap: 1.5rem; /*<!--adds space between nav items-->*/
+    padding: 0; /*<!--removes default padding-->*/
+    margin: 0; /*<!--removes default margin-->*/
 }
-  
+
+/*<!--styles links in the nav bar-->*/
 nav a{
-    text-decoration: none;
-    color: rgb(102, 102, 102);
-    transition: color 0.3s;
+    text-decoration: none; /*<!--removes underline from links-->*/
+    color: rgb(102, 102, 102); /*<!--sets link text color-->*/
+    transition: color 0.3s; /*<!--adds smooth color transition-->*/
 }
-  
+
+/*<!--styles links when hovered or active-->*/
 nav a:hover,nav a.active{
-    color: rgb(34, 34, 34);
-    font-weight: 600;
+    color: rgb(34, 34, 34); /*<!-- text color on hover-->*/
+    font-weight: 600; /*<!--makes hovered/active links bolder-->*/
 }
 
+/*<!--styles the main content container-->*/
 main{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    display: flex; /*<!--sets column flex layout-->*/
+    flex-direction: column; /*<!--stack children vertically-->*/
+    text-align: center; /*<!--center-aligns text-->*/
+    align-items: center; /*<!--center-aligns child items horizontally-->*/
 }
 
+/*<!--styles the contact section title-->*/
 #cont h1{
-    font-family: 'Orbitron', sans-serif;
-    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif; /*<!--sets futuristic font-->*/
+    font-size: 2rem; /*<!--sets heading size-->*/
 }
 
+/*<!--styles the entire contact section container-->*/
 #cont{
-    padding: 4rem; 
-    color: rgb(51, 51, 51);
+    padding: 4rem; /*<!--adds space inside container-->*/
+    color: rgb(51, 51, 51); /*<!--sets text color-->*/
 }
 
+/*<!--styles list inside the contact section-->*/
 #cont ul{
-    list-style: none;
-    line-height: 2rem;
+    list-style: none; /*<!--removes bullets from list-->*/
+    line-height: 2rem; /*<!--sets spacing between lines-->*/
 }
 
+/*<!--styles anchor tags inside the contact section-->*/
 #cont a{
-    color: #1a1a1a;
-    text-decoration: none;
-    font-weight: 600;
+    color: #1a1a1a; /*<!--color for links-->*/
+    text-decoration: none; /*<!--removes underline-->*/
+    font-weight: 600; /*<!--bold text-->*/
 }
 
+/*<!--adds underline on hover in contact links-->*/
 #cont a:hover{
-    text-decoration: underline;
+    text-decoration: underline; /*<!--underline on hover-->*/
 }
 
+/*<!--styles the form element itself-->*/
 form{
-    width: 20rem;
-    height: 20rem;
-    padding: 2rem;
-    background-color: #7b7b7b;
-    text-align: left;
-    border-radius: 0.8rem;
-    padding-right: 3rem;
+    width: 20rem; /*<!--fixed width-->*/
+    height: 20rem; /*<!--fixed height-->*/
+    padding: 2rem; /*<!--padding inside the form-->*/
+    background-color: #7b7b7b; /*<!--sets background color-->*/
+    text-align: left; /*<!--aligns form content left-->*/
+    border-radius: 0.8rem; /*<!--rounded corners-->*/
+    padding-right: 3rem; /*<!--extra space on the right-->*/
 }
 
-form input, form textarea{
-    width: 100%;
-    padding:0.5rem;
-    border: 2px solid grey;
-    border-radius: 0.4rem;
-    margin-top: 0.5rem;
-    background-color: rgb(216, 215, 215);
-    color: rgb(0, 0, 0);
+/*<!--styles inputs and textarea inside form-->*/
+form input,form textarea{
+    width: 100%; /*<!--inputs span full width-->*/
+    padding: 0.5rem; /*<!--padding inside inputs-->*/
+    border: 2px solid grey; /*<!--sets border color-->*/
+    border-radius: 0.4rem; /*<!--rounded corners-->*/
+    margin-top: 0.5rem; /*<!--spacing above inputs-->*/
+    background-color: rgb(216, 215, 215); /*<!--sets background color-->*/
+    color: rgb(0, 0, 0); /*<!--black text-->*/
 }
 
+/*<!--prevents textarea from being resized-->*/
 form textarea{
-    resize: none;
+    resize: none; /*<!--disables resizing-->*/
 }
 
+/*<!--styles the submit button-->*/
 form button{
-    background-color: rgb(181, 181, 181);
-    border: none;
-    padding: 0.5rem 1rem;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
+    background-color: rgb(181, 181, 181); /*<!--button background-->*/
+    border: none; /*<!--no border-->*/
+    padding: 0.5rem 1rem; /*<!--padding around text-->*/
+    margin-left: 1rem; /*<!--spacing on the left-->*/
+    margin-top: 1rem; /*<!--spacing above-->*/
+    border-radius: 5px; /*<!--rounded edges-->*/
+    cursor: pointer; /*<!--shows pointer on hover-->*/
 }
 
+/*<!--styles button on hover-->*/
 form button:hover{
-    background-color: #cdcccc;
+    background-color: #cdcccc; /*<!--lighter shade on hover-->*/
 }
 
+/*<!--centers the button div-->*/
 #btn{
-    text-align: center;
+    text-align: center; /*<!--center-aligns contents-->*/
 }
 
+/*<!--adds bottom margin below form-->*/
 #box{
-    padding-bottom: 4rem;
-    margin-top: -2rem;
-
+    padding-bottom: 4rem; /*<!--space below box-->*/
+    margin-top: -2rem; /*<!--pulls box upward-->*/
 }
 
+/*<!--styles the top section of the footer-->*/
 #top_ft{
-    display: flex;
-    align-items: flex-start; 
-    justify-content: space-around;
-    gap: 5rem;
-    background-color: rgba(0, 0, 0, 0.915);
-    color: rgb(205, 204, 204);  
-    padding: 3rem;
+    display: flex; /*<!--horizontal layout-->*/
+    align-items: flex-start; /*<!--aligns items to top-->*/
+    justify-content: space-around; /*<!--spaces evenly-->*/
+    gap: 5rem; /*<!--gap between columns-->*/
+    background-color: rgba(0, 0, 0, 0.915); /*<!--sets background color-->*/
+    color: rgb(205, 204, 204); /*<!--sets text color-->*/
+    padding: 3rem; /*<!--space inside footer-->*/
 }
 
-
+/*<!--styles links in the top footer-->*/
 #top_ft a{
-    text-decoration: none;
-    color: rgb(205, 204, 204); 
-
+    text-decoration: none; /*<!--removes underline-->*/
+    color: rgb(205, 204, 204); /*<!--matches text color-->*/
 }
 
+/*<!--styles list items in the top footer-->*/
 #top_ft li{
-    list-style: none;
-    line-height: 2rem;
-    text-align: left;
+    list-style: none; /*<!--removes bullets-->*/
+    line-height: 2rem; /*<!--space between lines-->*/
+    text-align: left; /*<!--left-aligns text-->*/
 }
 
+/*<!--removes default padding/margin from footer list-->*/
 #top_ft ul{
-    padding: 0;
-    margin: 0;
+    padding: 0; /*<!--removes padding-->*/
+    margin: 0; /*<!--removes margin-->*/
 }
 
+/*<!--styles the very bottom footer section-->*/
 #dwn_ft{
-    text-align: center;
-    padding: 0.3rem;
-    background-color: rgba(0, 0, 0, 0.816);
-    font-size: 0.9rem; 
-    color: rgb(153, 153, 153);
+    text-align: center; /*<!--center-aligns text-->*/
+    padding: 0.3rem; /*<!--small padding-->*/
+    background-color: rgba(0, 0, 0, 0.816); /*<!--sets background color-->*/
+    font-size: 0.9rem; /*<!--smaller text-->*/
+    color: rgb(153, 153, 153); /*<!--sets text color-->*/
 }
 
+/*<!--styles the scroll-to-top floating button-->*/
 .to-top{
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    padding: 0.4rem 1rem;
-    border-radius: 1rem;
-    background-color: rgba(249, 249, 249, 0.764);
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
-    font-size: large;
-    text-decoration: none;
+    position: fixed; /*<!--stays fixed on screen-->*/
+    bottom: 2rem; /*<!--distance from bottom-->*/
+    right: 2rem; /*<!--distance from right-->*/
+    padding: 0.4rem 1rem; /*<!--padding inside button-->*/
+    border-radius: 1rem; /*<!--rounded pill shape-->*/
+    background-color: rgba(249, 249, 249, 0.764); /*<!--sets background color-->*/
+    color: rgb(0, 0, 0); /*<!--sets text color-->*/
+    font-weight: bolder; /*<!--bold text-->*/
+    font-size: large; /*<!--large font size-->*/
+    text-decoration: none; /*<!--no underline-->*/
 }
 
-
-
+/*<!--responsive styles for screens 900px and below-->*/
 @media screen and (max-width: 900px){
 
+    /*<!--makes header stack vertically-->*/
     header{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .logo_img{
-        padding: 1rem;
-    }
-    
-    nav{
-        text-align: center;
-        padding:1rem;
-    }
-    nav ul{
-        flex-direction: row;
-        gap: 0.5rem; 
-        padding-left: 0;
-        margin-top: 0.5rem;
-    }
-    
-    #top_ft {
-    flex-direction: column;
-    padding: 2rem 1rem;
-    gap: 2rem;
+        flex-direction: column; /*<!--stack header items-->*/
+        align-items: center; /*<!--center items-->*/
+        justify-content: center; /*<!--center content vertically-->*/
     }
 
+    /*<!--adds spacing to logo on smaller screens-->*/
+    .logo_img{
+        padding: 1rem; /*<!--adds padding-->*/
+    }
+
+    /*<!--centers nav on small screens-->*/
+    nav{
+        text-align: center; /*<!--center nav text-->*/
+        padding: 1rem; /*<!--space around nav-->*/
+    }
+
+    /*<!--makes nav list vertical on small screens-->*/
+    nav ul{
+        flex-direction: row; /*<!--keep nav items in a row-->*/
+        gap: 0.5rem; /*<!--reduce gap-->*/
+        padding-left: 0; /*<!--remove left padding-->*/
+        margin-top: 0.5rem; /*<!--add top margin-->*/
+    }
+
+    /*<!--makes footer stack vertically on small screens-->*/
+    #top_ft{
+        flex-direction: column; /*<!--stack columns-->*/
+        padding: 2rem 1rem; /*<!--reduce padding-->*/
+        gap: 2rem; /*<!--reduce spacing-->*/
+    }
 }
