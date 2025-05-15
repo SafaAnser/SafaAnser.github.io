@@ -2,102 +2,166 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!--ensure responsive behavior on different devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--title of the webpage-->
   <title>Contact</title>
+
+  <!--link to external css file-->
   <link rel="stylesheet" href="contact.css">
+
+  <!--import orbitron font from google fonts-->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 
 </head>
+
+<!--start of the body-->
 <body>
+
+    <!--start of the header section-->
     <header> 
+        <!--display logo image with alt text and size-->
         <img class="logo_img" src="image/logo.png" alt="logo of Lexus"
         width="250rem"
         height="45rem">
-        <nav>
-            <ul>
+        <nav> <!--start of the navigation-->
+            <ul> <!--unordered list for nav links-->s
                 <li><a href="index.html" >Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="features.html">Features</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
+
+        <!--end of navigation-->
         </nav>
+
+    <!--end of header-->
     </header>
 
     <main>
 
+        <!--anchor link target for "to top" button-->
         <a id="top"></a>
+
+        <!--"to top" button-->
         <a href="#top" class="to-top">↑</a>
 
+        <!--start of contact section-->
         <section id="cont">
+            <!--main heading-->
             <h1>Contact Us</h1>
             <p>If you have any questions or feedback about the Lexus IS 350 F-Sport, feel free to reach out!</p>
 
+        <!--end of contact section-->
         </section>
         
+        <!--container for form-->
         <div id="box">
+            <!--form created and send to gmail-->
             <form action="mailto:@gmail.com">
+
+                <!--text input for name-->
                 <input type="text" name="name" placeholder="Your Name">
         
-                <br><br>
+                 <!--spacing-->
+                <br><br> 
 
-            
+                <!--email input field-->
                 <input type="email" name="email" placeholder="Your Email">
         
+                 <!--spacing-->
                 <br><br>
 
-        
+                <!--textarea for message-->
                 <textarea name="message" rows="5" placeholder="Text message"></textarea>
     
+                 <!--spacing-->
                 <br><br>
 
+                <!--container for button-->
                 <div id="btn">
+                    <!--submit button-->
                     <button type="submit">Send</button>
+                <!--end of button container-->
                 </div>
+
+            <!--end of contact form-->
             </form>
+
+        <!--end of form container-->
         </div>
     </main>
 
+    <!--start of footer-->
     <footer>
 
+        <!--top section of footer-->
         <div id="top_ft">
 
+            <!--quick links column-->
             <div>
+                <!--heading-->
                 <h3>Quick Links</h3>
+
+                <!--unordered list of quick links-->
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="features.html">Features</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                </ul>
+
+                <!--end of list-->
+                </ul> 
+
+            <!--end of quick links column-->
             </div>
 
+            
+            <!--support column-->
             <div>
+                <!--heading-->
                 <h3>Support</h3>
+
+                <!--unordered list of support links-->
                 <ul>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms of Service</a></li>
+                <!--end of list-->
                 </ul>
+
+            <!--end of support column-->   
             </div>
 
+           <!--follow us column-->
             <div>
+                <!--heading-->
                 <h3>Follow Us</h3>
+
+                <!--unordered list of social links-->
                 <ul>
                     <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
                     <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
                     <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                
+                <!--end of list-->
                 </ul>
+            <!--end of follow us column-->    
             </div>
 
+        <!--end of list-->
         </div>
 
-
+        <!--bottom section of footer-->
         <div id="dwn_ft">
             <p> &copy; 2025 My Ride Uncovered. Built with passion.</p>
+
+        <!--end of bottom footer-->
         </div>
-        
+    <!--end of footer-->
     </footer>
 
 
