@@ -1,222 +1,217 @@
-
+/*style for the entire webpage body*/
 body{
-    background-color: rgb(244, 244, 249);
-    color: rgb(51, 51, 51);
-    font-family: sans-serif;
-    font-size: 1rem;
-    margin: 0;
-    padding: 0;    
+    background-color: rgb(244, 244, 249); /*background color of the page*/
+    color: rgb(51, 51, 51); /*sets text color*/
+    font-family: sans-serif; /*sets font style*/
+    font-size: 1rem; /*sets font size*/
+    margin: 0; /*remove default margin*/
+    padding: 0; /*remove default padding*/
 }
 
 
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    background-size: 15rem;
-    min-height: 2rem;
-    padding: 1rem 2rem;
-
+    display: flex; /*use flexbox for header layout*/
+    justify-content: space-between; /*space between child element*/
+    align-items: center; /*vertically center items*/
+    background-color: rgb(255, 255, 255); /*white background*/
+    background-size: 15rem; /*size of background image if any*/
+    min-height: 2rem; /*minimum height of header*/
+    padding: 1rem 2rem; /*padding inside header*/
 }
 .logo_img{
-    margin: -1.5rem;
+    margin: -1.5rem; /*negative margin to adjust image position*/
 }
 
 nav ul li{
-    min-width:4rem;
-    text-align: center;
+    min-width:4rem; /*minimum width for nav list items*/
+    text-align: center; /*center align text*/
 }
   
 nav ul{
-    list-style: none;
-    display: flex;
-    gap: 1.5rem; 
-    padding: 0;
-    margin: 0;
-
+    list-style: none; /*remove bullet points*/
+    display: flex; /*display nav items inline*/
+    gap: 1.5rem;  /*space between nav items*/
+    padding: 0; /*remove default padding*/
+    margin: 0; /*remove default margin*/
 }
   
 nav a{
-    text-decoration: none;
-    color: rgb(102, 102, 102);
-    transition: color 0.3s;
+    text-decoration: none; /*remove underline from links*/
+    color: rgb(102, 102, 102); /*default link color*/
+    transition: color 0.3s; /*smooth color transition on hover*/
 }
   
 nav a:hover,nav a.active{
-    color: rgb(34, 34, 34);
-    font-weight: 600;
+    color: rgb(34, 34, 34); /*sets color on hover and active */
+    font-weight: 600; /*make font semi-bold*/
 }
 
 main{
-    min-height:100vh;
-    position: relative;
-    z-index: 1;
-    text-align: center;
+    min-height:100vh; /*minimum height is full viewport*/
+    position: relative; /*relative positioning*/
+    z-index: 1; /*place above background layers*/
+    text-align: center; /*center text horizontally*/
 }
 
 .mid{
-    text-align: center;
-    margin:1px;
-    display: inline;
+    text-align: center; /*center align text inside mid*/
+    margin:1px; /*small margin*/
+    display: inline; /*inline display*/
 }
 
 .mid h2{
-    margin-top: 2rem;
-    display: inline-block;
-    font-size: 2rem;  
-    font-family:'Orbitron', sans-serif;
+    margin-top: 2rem; /*top margin above heading*/
+    display: inline-block; /*inline block for layout*/
+    font-size: 2rem;  /*sets font size*/
+    font-family:'Orbitron', sans-serif; /*google font family*/
 }
 
 .mid p{
-    font-size: 1.25rem; 
-    margin-top: -1rem;
-    margin-bottom: 1rem; 
-    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.25rem; /*medium-large paragraph font size*/
+    margin-top: -1rem; /*negative top margin to reduce space*/
+    margin-bottom: 1rem; /*bottom margin*/
+    font-family:Arial, Helvetica, sans-serif; /*paragraph font*/
 }
   
 button{
-    display: inline-block;
-    background-color: #333;
-    color: rgb(255, 255, 255);
-    padding: 0.75rem 1.5rem; 
-    border-radius: 1.875rem; 
-    text-decoration: none;
-    transition: background 0.3s;
-    font-size: 1rem;
-    font-family:Arial, Helvetica, sans-serif;
-    cursor: pointer;
+    display: inline-block; /*inline block for buttons*/
+    background-color: #333; /*sets background color*/
+    color: rgb(255, 255, 255); /*sets text color*/
+    padding: 0.75rem 1.5rem;  /*button padding*/
+    border-radius: 1.8rem;  /*rounded corners*/
+    text-decoration: none; /*no underline*/
+    transition: background 0.3s; /*smooth background color change*/
+    font-size: 1rem; /*font size*/
+    font-family:Arial, Helvetica, sans-serif; /*font family*/
+    cursor: pointer; /*pointer cursor on hover*/
 }
   
 button:hover{
-    background-color: #555;
+    background-color: #555; /*lighter background on hover*/
 }
 
 .bg{
-    position:absolute;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; 
-    overflow: hidden;
+    position:absolute; /*absolute positioning*/
+    padding: 0; /*no padding*/
+    margin: 0; /*no margig*/
+    width: 100%; /*full width*/
+    height: 100%; /*full height*/
+    z-index: -1;  /*behind main content*/
+    overflow: hidden; /*hide overflow content*/
 }
   
 .bg iframe{
-    width: 100vw;
-    height: 100%;
-    border: none;
-    object-fit: cover;
-    pointer-events: auto;
+    width: 100vw; /*full viewport width*/
+    height: 100%; /*full height of container*/
+    border: none; /*no border*/
+    object-fit: cover; /*cover container area*/
+    pointer-events: auto; /*allow interaction*/
 }
 
 
 #top_ft{
-    display: flex;
-    align-items: flex-start; 
-    justify-content: space-around;
-    gap: 5rem;
-    background-color: rgba(0, 0, 0, 0.915);
-    color: rgb(205, 204, 204);  
-    padding: 3rem;
+    display: flex; /*flexbox for footer top*/
+    align-items: flex-start;  /*align items at top*/
+    justify-content: space-around; /*distribute space evenly*/
+    gap: 5rem; /*gap between items*/
+    background-color: rgba(0, 0, 0, 0.915); /*sets translucent background*/
+    color: rgb(205, 204, 204);  /*sets text color*/
+    padding: 3rem; /*padding inside footer top*/
 }
 
 
 #top_ft a{
-    text-decoration: none;
-    color: rgb(205, 204, 204); 
-
+    text-decoration: none; /*no underline for links*/
+    color: rgb(205, 204, 204);  /*link color*/
 }
 
 #top_ft li{
-    list-style: none;
-    line-height: 2rem;
-    text-align: left;
+    list-style: none; /*remove bullet points*/
+    line-height: 2rem; /*line height for readability*/
+    text-align: left; /*left align list items*/
 }
 
 #top_ft ul{
-    padding: 0;
-    margin: 0;
+    padding: 0; /*remove padding*/
+    margin: 0; /*remove margin*/
 }
 
 #dwn_ft{
-    text-align: center;
-    padding: 0.3rem;
-    background-color: rgba(0, 0, 0, 0.816);
-    font-size: 0.9rem; 
-    color: rgb(153, 153, 153);
+    text-align: center; /*center text in footer down*/
+    padding: 0.3rem; /*small padding*/
+    background-color: rgba(0, 0, 0, 0.816); /*translucent dark background*/
+    font-size: 0.9rem;  /*smaller font size*/
+    color: rgb(153, 153, 153); /*text color*/
 }
 
 .bg iframe {
-  max-width: 100vw;
+  max-width: 100vw; /*maximum width for iframe*/
 }
 
 @media screen and (max-width: 900px){
     header{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-     
+        flex-direction: column; /*stack header elements vertically*/
+        align-items: center; /*center horizontally*/
+        justify-content: center; /*center vertically*/
     }
 
     .logo_img{
-        padding: 1rem;
+        padding: 1rem; /*add padding around logo*/
     }
     
     nav{
-        text-align: center;
-        padding:1rem;
+        text-align: center; /*center nav text*/
+        padding:1rem; /*padding inside nav*/
     }
     nav ul{
-        flex-direction: row;
-        gap: 0.5rem; 
-        padding-left: 0;
-        margin-top: 0.5rem;
+        flex-direction: row; /*nav list horizontal*/
+        gap: 0.5rem;  /*smaller gap*/
+        padding-left: 0; /*remove left padding*/
+        margin-top: 0.5rem; /*margin on top*/
     }
   
     .mid h2{
-        font-size: 1.6rem;
+        font-size: 1.6rem; /*smaller heading font size*/
     }
     
     .mid p{
-        font-size: 1.1rem;
+        font-size: 1.1rem; /*smaller paragraph font size*/
     }
   
     button{
-      font-size: 1rem;
-      padding: 0.6rem 1.2rem; 
+      font-size: 1rem; /*button font size*/
+      padding: 0.6rem 1.2rem;  /*smaller button padding*/
     }
 
 }
 
 @media screen and (max-width: 600px) {
 
-
    .mid h2{
-          font-size: 1.4rem;
+          font-size: 1.4rem; /*even smaller heading font*/
     }
       
     .mid p{
-          font-size: 1rem;
+          font-size: 1rem; /*smaller paragraph font*/
     }
     
     button{
-        font-size: 0.8rem;
-        padding: 0.4rem 1rem; 
+        font-size: 0.8rem; /*smaller button text*/
+        padding: 0.4rem 1rem;  /*smaller button padding*/
     }
     
    .bg iframe{
-    height: 30rem;
+    height: 30rem; /*fixed height for iframe*/
     }
 
     main{
-    min-height:50vh;
+    min-height:50vh; /*reduce main height*/
     }
 
     #top_ft {
-    flex-direction: column;
-    padding: 0rem 1rem;
-    gap: 2rem;
+    flex-direction: column; /*stack footer top vertically*/
+    padding: 0rem 1rem; /*horizontal padding*/
+    gap: 2rem; /*smaller gap*/
     }
 
 }
