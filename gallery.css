@@ -1,166 +1,160 @@
-
-body{
-    font-family:sans-serif;
-    font-size: 1rem;
-    padding:0;
-    margin: 0;
-    color: rgb(245, 245, 245);
+body{ /*sets the default style for the entire page*/
+    font-family:sans-serif; /*sets font*/
+    font-size: 1rem; /*sets the base font size to 1 rem unit*/
+    padding:0; /*removes all inner spacing of the body*/
+    margin: 0; /*removes all outer spacing of the body*/
+    color: rgb(245, 245, 245); /*sets the text color of body*/
+    
 }
 
-main{
-    background-color: black;
-    padding: 1rem;
+main{ /*targets the main content area*/
+    background-color: black; /*sets the background*/
+    padding: 1rem; /*adds spacing inside the main area*/
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    background-size: 15rem;
-    min-height: 2rem;
-    padding: 1rem 2rem;
-
+header{ /*styles the top header section*/
+    display: flex; /*uses flexbox for layout*/
+    justify-content: space-between; /*places items with space between them*/
+    align-items: center; /*aligns items vertically in the center*/
+    background-color: rgb(255, 255, 255); /*sets the header background*/
+    background-size: 15rem; /*sets the background size*/
+    min-height: 2rem; /*sets a minimum height for the header*/
+    padding: 1rem 2rem; /*adds padding inside the header: top/bottom 1rem, left/right 2rem*/
 }
 
-nav ul li{
-    min-width: 4rem;
-    text-align: center;
+nav ul li{ /*styles each list item inside the navigation*/
+    min-width: 4rem; /*ensures each item has a minimum width*/
+    text-align: center; /*centers the text inside each item*/
 }
-nav ul{
-    list-style: none;
-    display: flex;
-    gap: 1.5rem; 
-    padding: 0;
-    margin:0;
+
+nav ul{ /*styles the unordered list inside nav*/
+    list-style: none; /*removes bullet points from the list*/
+    display: flex; /*lays out list items in a row using flexbox*/
+    gap: 1.5rem;  /*adds space between the items*/
+    padding: 0; /*removes padding from the list*/
+    margin:0; /*removes margin from the list*/
 }
   
-nav a{
-    text-decoration: none;
-    color: rgb(102, 102, 102);
-    transition: color 0.3s;
-    
-}
-  
-nav a:hover,nav a.active{
-    color: rgb(34, 34, 34);
-    font-weight: 600;
+nav a{ /*styles the navigation links*/
+    text-decoration: none; /*removes the underline from links*/
+    color: rgb(102, 102, 102); /*sets color for links*/
+    transition: color 0.3s; /*smoothly changes the color on hover*/
 }
 
-
-.logo_img{
-    margin: -1.5rem;
+nav a:hover,nav a.active{ /*targets links when hovered or active*/
+    color: rgb(34, 34, 34); /*changes link color*/
+    font-weight: 600; /*makes the font bold*/
 }
 
-h1{
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 2rem;
+.logo_img{ /*targets the logo image class*/
+    margin: -1.5rem; /*pulls the logo image upward*/
 }
 
-#gal{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 0.8rem;
-    padding-bottom:4rem ;
-}
-#gal img{
-    width: 25rem;
-    height: auto;
-    border-radius: 1rem;
-    margin-bottom:-0.3rem ;
+h1{ /*styles all h1 headings*/
+    text-align: center; /*centers the heading text*/
+    font-family: 'Orbitron', sans-serif; /*uses a futuristic font for the heading*/
+    font-size: 2rem; /*sets the heading size*/
 }
 
-#gal a:hover{
-    border-radius: 1rem;
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
-    transform: scale(1.02);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+#gal{ /*styles the gallery section*/
+    display: flex; /*uses flexbox for layout*/
+    flex-wrap: wrap; /*allows items to wrap to next line*/
+    align-items: center; /*centers items vertically*/
+    justify-content: center; /*centers items horizontally*/
+    gap: 0.8rem; /*adds space between gallery items*/
+    padding-bottom:4rem ; /*adds space at the bottom of the gallery*/
 }
 
-#top_ft{
-    display: flex;
-    align-items: flex-start; 
-    justify-content: space-around;
-    gap: 5rem;
-    background-color: rgba(0, 0, 0, 0.915);
-    color: rgb(205, 204, 204);  
-    padding: 3rem;
+#gal img{ /*styles the images inside the gallery*/
+    width: 25rem; /*sets a fixed width for each image*/
+    height: auto; /*maintains the original image height ratio*/
+    border-radius: 1rem; /*rounds the corners of each image*/
+    margin-bottom:-0.3rem ; /*slightly pulls the image up*/
 }
 
-
-#top_ft a{
-    text-decoration: none;
-    color: rgb(205, 204, 204); 
-
+#gal a:hover{ /*styles gallery image links when hovered*/
+    border-radius: 1rem; /*rounds corners on hover*/
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7); /*adds a glowing shadow effect*/
+    transform: scale(1.02); /*makes the image slightly bigger on hover*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*adds smooth animation*/
 }
 
-#top_ft li{
-    list-style: none;
-    line-height: 2rem;
-    text-align: left;
+#top_ft{ /*styles the top footer section*/
+    display: flex; /*uses flexbox layout*/
+    align-items: flex-start;  /*aligns items to the top*/
+    justify-content: space-around; /*distributes footer sections evenly*/
+    gap: 5rem; /*adds space between footer sections*/
+    background-color: rgba(0, 0, 0, 0.915); /*sets a semi-transparent background*/
+    color: rgb(205, 204, 204);  /*sets text color*/
+    padding: 3rem; /*adds space inside the footer*/
 }
 
-#top_ft ul{
-    padding: 0;
-    margin: 0;
+#top_ft a{ /*styles links in the top footer*/
+    text-decoration: none; /*removes underline*/
+    color: rgb(205, 204, 204);  /*sets link color to match footer text*/
 }
 
-#dwn_ft{
-    text-align: center;
-    padding: 0.3rem;
-    background-color: rgba(0, 0, 0, 0.816);
-    font-size: 0.9rem; 
-    color: rgb(153, 153, 153);
+#top_ft li{ /*styles list items in the footer*/
+    list-style: none; /*removes bullet points*/
+    line-height: 2rem; /*adds vertical space between lines*/
+    text-align: left; /*aligns text to the left*/
 }
 
-.to-top{
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    padding: 0.4rem 1rem;
-    border-radius: 1rem;
-    background-color: rgba(249, 249, 249, 0.764);
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
-    font-size: large;
-    text-decoration: none;
+#top_ft ul{ /*targets the unordered list inside the footer*/
+    padding: 0; /*removes padding*/
+    margin: 0; /*removes margin*/
 }
 
+#dwn_ft{ /*styles the bottom footer section*/
+    text-align: center; /*centers the text*/
+    padding: 0.3rem; /*adds space around the content*/
+    background-color: rgba(0, 0, 0, 0.816); /*sets a semi-transparent background*/
+    font-size: 0.9rem;  /*slightly reduces the font size*/
+    color: rgb(153, 153, 153); /*sets text color*/
+}
 
-@media screen and (max-width: 900px){
+.to-top{ /*styles the back-to-top button*/
+    position: fixed; /*keeps the button in the same position on screen*/
+    bottom: 2rem; /*places the button 2rem from the bottom*/
+    right: 2rem; /*places the button 2rem from the right*/
+    padding: 0.4rem 1rem; /*adds space inside the button*/
+    border-radius: 1rem; /*rounds the button edges*/
+    background-color: rgba(249, 249, 249, 0.764); /*sets a semi-transparent background*/
+    color: rgb(0, 0, 0); /*sets the text color*/
+    font-weight: bolder; /*makes the text very bold*/
+    font-size: large; /*increases the font size*/
+    text-decoration: none; /*removes underline*/
+}
 
-    header{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .logo_img{
-        padding: 1rem;
-    }
-    
-    nav{
-        text-align: center;
-        padding:1rem;
-    }
-    nav ul{
-        flex-direction: row;
-        gap: 0.5rem; 
-        padding-left: 0;
-        margin-top: 0.5rem;
+@media screen and (max-width: 900px){ /*applies styles when screen is 900px wide or smaller*/
+
+    header{ /*adjusts header layout for small screens*/
+        flex-direction: column; /*stacks items vertically*/
+        align-items: center; /*centers the items */
+        justify-content: center; /*centers them horizontally*/
     }
 
-    
-    #top_ft {
-    flex-direction: column;
-    padding: 2rem 1rem;
-    gap: 2rem;
+    .logo_img{ /*changes logo styling for smaller screens*/
+        padding: 1rem; /*adds space around the logo*/
     }
 
+    nav{ /*adjusts navigation layout*/
+        text-align: center; /*centers nav content*/
+        padding:1rem; /*adds space inside nav*/
+    }
+
+    nav ul{ /*stacks the nav items closer together*/
+        flex-direction: row; /*keeps nav items in a row*/
+        gap: 0.5rem;  /*reduces space between items*/
+        padding-left: 0; /*removes left padding*/
+        margin-top: 0.5rem; /*adds top margin*/
+    }
+
+    #top_ft { /*adjusts footer layout for small screens*/
+        flex-direction: column; /*stacks footer columns vertically*/
+        padding: 2rem 1rem; /*changes inner spacing*/
+        gap: 2rem; /*reduces space between sections*/
+    }
 }
 
 
