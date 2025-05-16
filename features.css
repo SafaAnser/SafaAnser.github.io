@@ -184,6 +184,13 @@ nav a:hover,nav a.active{
     margin: 0; /*removes margin*/
 } 
 
+/*hover effects for a link*/
+#top_ft a:hover{
+    color: rgb(114, 114, 114) ; /*changes the color*/
+    transition: all 0.5s ease; /*gives transition for smoother feel*/
+}
+
+
 /*bottom part of footer*/
 #dwn_ft{ 
     text-align: center; /*centers text*/
