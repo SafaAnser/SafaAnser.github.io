@@ -136,6 +136,12 @@ button:hover{
     margin: 0; /*remove margin*/
 }
 
+/*hover effects for a link*/
+#top_ft a:hover{
+    color: rgb(114, 114, 114) ; /*changes the color*/
+    transition: all 0.5s ease; /*gives transition for smoother feel*/
+}
+
 #dwn_ft{
     text-align: center; /*center text in footer down*/
     padding: 0.3rem; /*small padding*/
@@ -143,6 +149,7 @@ button:hover{
     font-size: 0.9rem;  /*smaller font size*/
     color: rgb(153, 153, 153); /*text color*/
 }
+
 
 .bg iframe {
   max-width: 100vw; /*maximum width for iframe*/
