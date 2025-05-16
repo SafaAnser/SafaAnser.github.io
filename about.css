@@ -146,6 +146,13 @@ h2{
     margin: 0;
 }
 
+/*hover effects for a link*/
+#top_ft a:hover{
+    color: rgb(114, 114, 114) ; /*changes the color*/
+    transition: all 0.5s ease; /*gives transition for smoother feel*/
+}
+
+
 /*styles the bottom footer text*/
 #dwn_ft{
     text-align: center; /*centers text*/
